@@ -16,6 +16,7 @@ export default async function List() {
         result.map((item, index) => 
             <div className="list-item" key={index}>
                 <Link href={'/detail/' + result[index]._id}><h4>{item.title}</h4></Link>
+                <Link href={'/edit/' + result[index]._id}>수정</Link>
                 <p>1월 1일</p>
             </div>
         )
